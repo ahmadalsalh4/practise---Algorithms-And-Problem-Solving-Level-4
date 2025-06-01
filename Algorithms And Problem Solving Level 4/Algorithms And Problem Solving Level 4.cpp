@@ -1,11 +1,11 @@
 #include "mylab.h"
 
-void fun1()
+void Problem1()
 {
 	cout << MyNumberToText(MyReadIntNumber()) << endl;
 }
 
-void fun2()
+void Problem2()
 {
 	int year = MyReadIntNumber("please enter a year to check: ");
 	if (MyIsLeapYearV1(year))
@@ -14,7 +14,7 @@ void fun2()
 		cout << "no, year [" << year << "] is not a leap year.\n";
 }
 
-void fun3()
+void Problem3()
 {
 	int year = MyReadIntNumber("please enter a year to check: ");
 	if (MyIsLeapYear(year))
@@ -23,7 +23,7 @@ void fun3()
 		cout << "no, year [" << year << "] is not a leap year.\n";
 }
 
-void fun4()
+void Problem4()
 {
 	int year = MyReadIntNumber("please enter a year to check: ");
 
@@ -33,7 +33,7 @@ void fun4()
 	cout << "\nNumber of seconds in year [" << year << "] is " << MyNumberOfSecondsInYear(year) << endl;
 }
 
-void fun5()
+void Problem5()
 {
 	int year = MyReadIntNumber("please enter a year to check: ");
 	int month = MyReadIntNumber("please enter a month to check: ");
@@ -44,7 +44,7 @@ void fun5()
 	cout << "\nNumber of seconds in month [" << month << "] is " << MyNumberOfSecondsInMonth(year, month) << endl;
 }
 
-void fun6()
+void Problem6()
 {
 	int year = MyReadIntNumber("please enter a year to check: ");
 	int month = MyReadIntNumber("please enter a month to check: ");
@@ -56,7 +56,7 @@ void fun6()
 
 }
 
-void fun7()
+void Problem7()
 {
 	int year = MyReadIntNumber("please enter a year: ");
 	int month = MyReadIntNumber("please enter a month: ");
@@ -68,19 +68,19 @@ void fun7()
 	cout << "Day Name  : " << MyGetDayName(dayorder) << endl;
 }
 
-void fun8()
+void Problem8()
 {
 	int year = MyReadIntNumber("please enter a year: ");
 	int month = MyReadIntNumber("please enter a month: ");
 	MyPrintMonthCalendar(year, month);
 }
 
-void fun9()
+void Problem9()
 {
 	MyPrintYearCalendar(MyReadIntNumber("please enter a year: "));
 }
 
-void fun10()
+void Problem10()
 {
 	int day = MyReadIntNumber("please enter a day: ");
 	int month = MyReadIntNumber("please enter a month: ");
@@ -90,7 +90,7 @@ void fun10()
 	cout << endl;
 }
 
-void fun11()
+void Problem11()
 {
 	int day = MyReadIntNumber("please enter a day: ");
 	int month = MyReadIntNumber("please enter a month: ");
@@ -104,7 +104,7 @@ void fun11()
 	cout << date.day << "/" << date.month << "/" << date.year << endl;
 }
 
-void fun12()
+void Problem12()
 {
 	stdate date = MyReadDate();
 	int DaysToAdd = MyReadIntNumber("please enter how many days to add: ");
@@ -114,7 +114,7 @@ void fun12()
 	cout << DateAfterAdd.day << "/" << DateAfterAdd.month << "/" << DateAfterAdd.year << endl;
 }
 
-void fun13()
+void Problem13()
 {
 	stdate date1 = MyReadDate();
 	cout << endl;
@@ -126,7 +126,7 @@ void fun13()
 		cout << "no, date1 is not less then date2.";
 }
 
-void fun14()
+void Problem14()
 {
 	stdate date1 = MyReadDate();
 	cout << endl;
@@ -138,7 +138,7 @@ void fun14()
 		cout << "\nno, date1 not equal date2.\n";
 }
 
-void fun15()
+void Problem15()
 {
 	stdate date1 = MyReadDate();
 	
@@ -153,7 +153,7 @@ void fun15()
 		cout << "\nno, month is not last month in year\n";
 }
 
-void fun16()
+void Problem16()
 {
 	stdate date1 = MyReadDate();
 	stdate DateAfterAdd = MyIncressDateByOneDay(date1);
@@ -162,7 +162,7 @@ void fun16()
 	cout << DateAfterAdd.day << "/" << DateAfterAdd.month << "/" << DateAfterAdd.year << endl;
 }
 
-void fun17()
+void Problem17()
 {
 	stdate date1 = MyReadDate();
 	cout << endl;
@@ -172,7 +172,7 @@ void fun17()
 	cout << "\ndifrences (includin end day) is: " << MyCalculateDifrenceBetwen2Date(date1, date2, 1) << " Day (s).\n";
 }
 
-void fun18()
+void Problem18()
 {
 	cout << "please enter your date birth:\n";
 	stdate date1 = MyReadDate();
@@ -181,7 +181,7 @@ void fun18()
 	cout << "your age is: " << MyCalculateDifrenceBetwen2Date(date1, systemDate) << "Day (s)";
 }
 
-void fun19()
+void Problem19()
 {
 	stdate date1 = MyReadDate();
 	cout << endl;
@@ -192,7 +192,7 @@ void fun19()
 
 }
 
-void fun20_32()
+void Problem20_32()
 {
 	stdate date1 = MyReadDate();
 	
@@ -248,7 +248,7 @@ void fun20_32()
 
 }
 
-void fun33_46()
+void Problem33_46()
 {
 	stdate date1 = MyReadDate();
 
@@ -304,7 +304,7 @@ void fun33_46()
 
 }
 
-void fun47_53()
+void Problem47_53()
 {
 	stdate date = MyGetSystemTime();
 	int dayorder = MyFindDayOrder(date);
@@ -336,7 +336,7 @@ void fun47_53()
 
 }
 
-void fun54()
+void Problem54()
 {
 	cout << "Vacation starts:\n\n";
 	stdate date1 = MyReadDate();
@@ -354,7 +354,7 @@ void fun54()
 
 }
 
-void fun55()
+void Problem55()
 {
 	cout << "Vacation starts:\n\n";
 	stdate date1 = MyReadDate();
@@ -369,7 +369,7 @@ void fun55()
 
 }
 
-void fun56()
+void Problem56()
 {
 	cout << "please enter date1:\n\n";
 	stdate date1 = MyReadDate();
@@ -384,7 +384,7 @@ void fun56()
 
 }
 
-void fun57()
+void Problem57()
 {
 	cout << "please enter date1:\n\n";
 	stdate date1 = MyReadDate();
@@ -395,7 +395,7 @@ void fun57()
 	cout << "comopare result: " << MyCompareResult(date1, date2) << endl;
 }
 
-void fun58()
+void Problem58()
 {
 	stDatePeriod Period1;
 	cout << "please enter period 1\n";
@@ -418,7 +418,7 @@ void fun58()
 
 }
 
-void fun59()
+void Problem59()
 {
 	stDatePeriod Period1;
 	cout << "please enter period 1\n";
@@ -432,7 +432,7 @@ void fun59()
 
 }
 
-void fun60()
+void Problem60()
 {
 	stDatePeriod Period;
 	cout << "please enter period\n";
@@ -451,7 +451,7 @@ void fun60()
 
 }
 
-void fun61()
+void Problem61()
 {
 	cout << "please enter period 1\n";
 	stDatePeriod Period1 = MyReadPeriod();
@@ -462,7 +462,7 @@ void fun61()
 	cout << "\noverlap days count is: " << MyOverlapDaysCount(Period1, Period2) << endl;
 }
 
-void fun62()
+void Problem62()
 {
 	stdate date1 = MyReadDate();
 
@@ -472,7 +472,7 @@ void fun62()
 		cout << "\nno, its not valid date.\n";
 }
 
-void fun63_64()
+void Problem63_64()
 {
 	string s1 = MyReadText("please enter date dd/mm/yyyy : ");
 	stdate date1 = MyConvertDateStringToDate(s1);
@@ -486,7 +486,7 @@ void fun63_64()
 	cout << "\nyou entered: " << s2;
 }
 
-void fun65()
+void Problem65()
 {
 	string s1 = MyReadText("please enter date dd/mm/yyyy : ");
 	stdate date = MyConvertDateStringToDate(s1);
